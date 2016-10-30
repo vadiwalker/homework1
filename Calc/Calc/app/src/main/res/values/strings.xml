@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">Calculator</string>
+    <string name = "dig0">0</string>
+    <string name = "dig1">1</string>
+    <string name = "dig2">2</string>
+    <string name = "dig3">3</string>
+    <string name = "dig4">4</string>
+    <string name = "dig5">5</string>
+    <string name = "dig6">6</string>
+    <string name = "dig7">7</string>
+    <string name = "dig8">8</string>
+    <string name = "dig9">9</string>
+    <string name = "eqv">=</string>
+    <string name = "add">+</string>
+    <string name = "sub">-</string>
+    <string name = "mul">*</string>
+    <string name = "div">/</string>
+    <string name = "c">C</string>
+    <string name = "del">del</string>
+    <string name = "dot">.</string>
+    <string name = "open">(</string>
+    <string name = "close">)</string>
+</resources>

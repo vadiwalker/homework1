@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation = "vertical"
+    android:paddingBottom="16dp"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background = "@mipmap/back"
+    tools:context="com.example.vadim.calc.MainActivity">
+    <TextView android:id = "@+id/screen"
+        android:layout_width = "match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight = "1"
+        android:textColor="@color/textColor"
+        android:textSize = "@dimen/textSize"
+        />
+    <TextView android:id = "@+id/result"
+        android:layout_width = "match_parent"
+        android:layout_height = "wrap_content"
+        android:layout_weight = "1"
+        android:textColor = "@color/textColor"
+        android:textSize = "@dimen/textSize"
+        android:gravity = "bottom"/>
+
+    <TableLayout
+        android:layout_height = "wrap_content"
+        android:layout_width = "match_parent"
+        android:gravity = "bottom">
+        <TableRow
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent"
+            >
+            <Button
+                style = "@style/button"
+                android:text = "@string/c"
+                android:onClick = "clickC">
+            </Button>
+
+            <Button
+                style = "@style/button"
+                android:text = "@string/del"
+                android:onClick = "clickDel">
+            </Button>
+            <Button android:id = "@+id/dot"
+                style = "@style/button"
+                android:text = "@string/dot"
+                android:onClick = "clickText">
+
+            </Button>
+            <Button android:id = "@+id/eqv"
+                style = "@style/button"
+                android:text = "@string/eqv"
+                android:background = "@color/eqvButton"
+                android:onClick = "clickEqv">
+            </Button>
+        </TableRow>
+        <TableRow
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent">
+            <Button android:id = "@+id/d7"
+                style = "@style/button"
+                android:text = "@string/dig7"
+                android:onClick = "clickText">
+
+            </Button>
+            <Button android:id = "@+id/d8"
+                style = "@style/button"
+                android:text = "@string/dig8"
+                android:onClick = "clickText">
+
+            </Button>
+            <Button android:id = "@+id/d9"
+                style = "@style/button"
+                android:text = "@string/dig9"
+                android:onClick = "clickText">
+
+            </Button>
+            <Button android:id = "@+id/add"
+                style = "@style/button"
+                android:text = "@string/add"
+                android:onClick = "clickText">
+            </Button>
+        </TableRow>
+        <TableRow
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent">
+            <Button android:id = "@+id/d4"
+                style = "@style/button"
+                android:text = "@string/dig4"
+                android:onClick = "clickText">
+
+            </Button>
+            <Button android:id = "@+id/d5"
+                style = "@style/button"
+                android:text = "@string/dig5"
+                android:onClick = "clickText">
+
+            </Button>
+            <Button android:id = "@+id/d6"
+                style = "@style/button"
+                android:text= "@string/dig6"
+                android:onClick = "clickText">
+            </Button>
+            <Button android:id = "@+id/sub"
+                style = "@style/button"
+                android:text = "@string/sub"
+                android:onClick = "clickText">
+            </Button>
+        </TableRow>
+
+        <TableRow
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent">
+            <Button android:id = "@+id/d1"
+                style = "@style/button"
+                android:text = "@string/dig1"
+                android:onClick = "clickText">
+            </Button>
+            <Button android:id = "@+id/d2"
+                style = "@style/button"
+                android:text = "@string/dig2"
+                android:onClick = "clickText">
+            </Button>
+            <Button android:id = "@+id/d3"
+                style = "@style/button"
+                android:text= "@string/dig3"
+                android:onClick = "clickText">
+            </Button>
+            <Button android:id = "@+id/mul"
+                style = "@style/button"
+                android:text = "@string/mul"
+                android:onClick = "clickText">
+            </Button>
+        </TableRow>
+        <TableRow
+            android:layout_height = "wrap_content"
+            android:layout_width = "match_parent">
+            <Button android:id = "@+id/openBr"
+                style = "@style/button"
+                android:text = "@string/open"
+                android:onClick = "clickText">
+            </Button>
+            <Button android:id = "@+id/d0"
+                style = "@style/button"
+                android:text = "@string/dig0"
+                android:onClick = "clickText">
+            </Button>
+            <Button android:id = "@+id/closeBr"
+                style = "@style/button"
+                android:text = "@string/close"
+                android:onClick = "clickText">
+            </Button>
+            <Button
+                style = "@style/button"
+                android:text = "@string/div"
+                android:onClick = "clickText">
+            </Button>
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
